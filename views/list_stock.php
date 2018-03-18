@@ -7,32 +7,7 @@ function standardise_name($string){
     return $string;
 }
 
-$stock = [
-    [
-        "thumbnail" => "IMG_3360-250x250",
-        "name" => "Meuble-vitrine de chapelier"
-    ],
-    [
-        "thumbnail" => "IMG_3402-250x250",
-        "name" => "Meuble de barbier / coiffeur"
-    ],
-    [
-        "thumbnail" => "IMG_3800-250x250",
-        "name" => "Meuble de coiffeur / barbier"
-    ],
-    [
-        "thumbnail" => "IMG_3940-250x250",
-        "name" => "Comptoir de pharmacie - herboristerie double-face"
-    ],
-    [
-        "thumbnail" => "IMG_E3546-250x250",
-        "name" => "Comptoir de réception en chêne"
-    ]
-];
-
-for($i = 0; $i < 3; $i++){ // Sert à gonfler artificiellement le stock
-    $stock = array_merge($stock, $stock);
-}
+$stock = get_stock();
 
 ob_start();
 ?>

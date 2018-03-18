@@ -1,8 +1,9 @@
 <?php
 
+$title = "Didier Motte : Antiquités, Décorations, Belgique — meubles industriels";
 $content = "";
 
-include "controller/router.php";
+include "controllers/router.php";
 
-$content .= "</body></html>";
-echo $content;
+// Template : affiche la page
+include "views/template.php";
