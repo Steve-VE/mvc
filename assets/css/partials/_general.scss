@@ -1,0 +1,70 @@
+.button, input[type=submit]{
+    display: inline-block;
+    padding: 8px 8px;
+    margin: 0 2px;
+
+    color: $color-lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: $color-darker;
+    border: 1px solid $color-darker;
+    border-radius: 4px;
+    
+    cursor: pointer;
+    transition: color $transition-delay, background-color $transition-delay;
+    
+    &.active, &:hover{
+        text-decoration: none;
+        color: $color-darker;
+        background-color: $color-fill;
+    }
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.col-center{
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 150px;
+    
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: justify;
+
+    h1{
+        margin-bottom: 32px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h2{
+        margin: 48px 0 12px;
+        font-size: 1em;
+    }
+
+    p{
+        margin-bottom: 24px;
+    }
+    
+    .button{
+        margin-left: 0;
+        padding: 0px 8px;
+        font-size: 0.7em;
+    }
+}
+
+.lower{
+    text-transform: initial;
+}
+
+#map{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+
+    border: 1px solid black;
+}

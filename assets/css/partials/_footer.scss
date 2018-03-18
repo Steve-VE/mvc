@@ -1,0 +1,28 @@
+
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 32px;
+    padding-top: 48px;
+
+    background-color: $color-darker;
+    font-size: 0.8em;
+    
+    p{
+        margin: 0 auto;
+        margin-bottom: 18px;
+        color: $color-fill;
+        text-align: center;
+    }
+
+    a{
+        color: $color-lighter;
+        text-decoration: none;
+        border-bottom: dotted 1px $color-fill;
+        
+        &:hover{
+            border-bottom: solid 1px $color-fill;
+        }
+    }
+}

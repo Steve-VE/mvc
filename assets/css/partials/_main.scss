@@ -1,0 +1,56 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+
+input{
+    padding: 4px;
+}
+
+body{
+    background-image: url("/assets/img/NY_docks_o.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+
+main{
+    padding: 32px;
+    padding-top: 100px;
+
+    background-color: $color-fill;
+
+    text-align: center;
+
+    hr{
+        padding-bottom: 100px;
+        background: url("../img/separator-lines.png") center center no-repeat;
+        border: none;
+    }
+}
+
+section{
+    width: 40%;
+    max-width: 480px;
+    height: 80vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+.phone{
+    &:before{
+        content: '☎';
+    }
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    font-size: 2em;
+
+    margin-bottom: 24px;
+}

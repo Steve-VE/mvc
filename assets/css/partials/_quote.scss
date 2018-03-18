@@ -1,0 +1,32 @@
+
+
+section.quote{
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+
+    & > div.quote{
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        margin: auto;
+        height: fit-content;
+        
+        p{
+            color: $color-fill;
+            text-align: center;
+            margin-bottom: 8px;
+            padding: 4px 8px;
+
+            &:first-child{
+                background-color: $color-quote;
+                font-size: 2em;
+                font-style: italic;
+            }
+            &:last-child{
+                width: fit-content;
+                margin: 0 auto;
+                background-color: $color-main;
+            }
+        }
+    }
+}

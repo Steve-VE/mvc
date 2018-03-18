@@ -1,0 +1,66 @@
+section.card{
+    font-family: "Lato", sans-serif;
+
+    div.card{
+        box-sizing: border-box;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        
+        width: 100%;
+        height: fit-content;
+        padding: 12px 24px 48px;
+        margin: auto;
+        
+        background-color: $color-lighter;
+        border-radius: 8px;
+
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+
+    img{
+        width: 90%;
+    }
+
+    a:not(.button){
+        color: $color-darker;
+        text-decoration: none;
+        
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    ul{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        li{
+            display: inline;
+            position: relative;
+            margin-left: 12px;
+
+            list-style: none;
+
+            &:before {
+                content: '\2022';
+                position: absolute;
+                left: -12px;
+            }
+
+            &:first-child{
+                margin-left: 0;
+
+                &:before {
+                    content: '';
+                }
+            }
+        }
+    }
+
+    img, &>a, ul, .phone{
+        margin-bottom: 32px;
+    }
+}

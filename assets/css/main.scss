@@ -1,0 +1,20 @@
+$color-main: #272727;
+$color-darker: #222;
+$color-fill: #f7f7f7;
+$color-lighter: #fff;
+$color-quote: #564e44;
+
+$transition-delay: 0.3s;
+
+@import url("vendors/reset.css");
+
+@import "partials/_main";
+@import "partials/_header";
+
+@import "partials/_about";
+@import "partials/_card";
+@import "partials/_general";
+@import "partials/_quote";
+@import "partials/_stock";
+
+@import "partials/_footer";

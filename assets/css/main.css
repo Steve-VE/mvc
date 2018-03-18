@@ -1,0 +1,393 @@
+@charset "UTF-8";
+@import url("vendors/reset.css");
+* {
+  font-family: "Lato", sans-serif;
+}
+
+input {
+  padding: 4px;
+}
+
+body {
+  background-image: url("/assets/img/NY_docks_o.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+
+main {
+  padding: 32px;
+  padding-top: 100px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+main hr {
+  padding-bottom: 100px;
+  background: url("../img/separator-lines.png") center center no-repeat;
+  border: none;
+}
+
+section {
+  width: 40%;
+  max-width: 480px;
+  height: 80vh;
+  position: relative;
+  margin: 0 auto;
+}
+
+.phone:before {
+  content: '☎';
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 24px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  background-color: #272727;
+  font-size: 0.85em;
+  color: #f7f7f7;
+  font-family: "Lato", sans-serif;
+}
+
+header.empty {
+  height: 49px;
+  border-bottom: 1px solid #564e44;
+}
+
+header hr {
+  border: none;
+  border-bottom: 1px solid #564e44;
+}
+
+header ul {
+  padding: 12px 0;
+}
+
+header ul li {
+  position: relative;
+  margin-left: 12px;
+  display: inline-block;
+  list-style: none;
+}
+
+header ul li:before {
+  content: '\2022';
+  position: absolute;
+  left: -10px;
+}
+
+header ul li:first-child {
+  margin-left: 0;
+}
+
+header ul li:first-child:before {
+  content: '';
+}
+
+header .button {
+  border-color: #564e44;
+}
+
+header a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header nav {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+header .profil-pic {
+  float: left;
+}
+
+header .profil-pic img {
+  height: 75px;
+}
+
+header .phone {
+  margin: 8px 12px;
+  float: right;
+}
+
+section.card {
+  font-family: "Lato", sans-serif;
+}
+
+section.card div.card {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 12px 24px 48px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+section.card img {
+  width: 90%;
+}
+
+section.card a:not(.button) {
+  color: #222;
+  text-decoration: none;
+}
+
+section.card a:not(.button):hover {
+  text-decoration: underline;
+}
+
+section.card ul {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.card ul li {
+  display: inline;
+  position: relative;
+  margin-left: 12px;
+  list-style: none;
+}
+
+section.card ul li:before {
+  content: '\2022';
+  position: absolute;
+  left: -12px;
+}
+
+section.card ul li:first-child {
+  margin-left: 0;
+}
+
+section.card ul li:first-child:before {
+  content: '';
+}
+
+section.card img, section.card > a, section.card ul, section.card .phone {
+  margin-bottom: 32px;
+}
+
+.button, input[type=submit] {
+  display: inline-block;
+  padding: 8px 8px;
+  margin: 0 2px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #222;
+  border: 1px solid #222;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.button.active, .button:hover, input[type=submit].active, input[type=submit]:hover {
+  text-decoration: none;
+  color: #222;
+  background-color: #f7f7f7;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+.col-center {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 150px;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.col-center h1 {
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.col-center h2 {
+  margin: 48px 0 12px;
+  font-size: 1em;
+}
+
+.col-center p {
+  margin-bottom: 24px;
+}
+
+.col-center .button {
+  margin-left: 0;
+  padding: 0px 8px;
+  font-size: 0.7em;
+}
+
+.lower {
+  text-transform: initial;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+section.quote {
+  position: relative;
+  width: 60%;
+  max-width: 600px;
+}
+
+section.quote > div.quote {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: fit-content;
+}
+
+section.quote > div.quote p {
+  color: #f7f7f7;
+  text-align: center;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+}
+
+section.quote > div.quote p:first-child {
+  background-color: #564e44;
+  font-size: 2em;
+  font-style: italic;
+}
+
+section.quote > div.quote p:last-child {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #272727;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .item {
+  width: 250px;
+  height: 289px;
+  margin: 12px 8px;
+  padding: 8px;
+  float: left;
+  border-radius: 6px;
+  background-color: #272727;
+}
+
+.container .item p {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.container .item .image-container {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.container .item .image-container img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.container .item .image-container img:hover {
+  transform: scale(1.5);
+}
+
+.stock-list {
+  width: 100%;
+  text-align: left;
+}
+
+.stock-list .tag {
+  display: inline-block;
+  width: 23%;
+  margin: 0 1%;
+  padding: 2px 0;
+  text-align: left;
+  font-size: 0.8em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+}
+
+.stock-list .tag a {
+  color: #272727;
+  text-decoration: none;
+}
+
+.stock-list .tag a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 640px) {
+  .stock-list .tag {
+    width: 48%;
+  }
+}
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 32px;
+  padding-top: 48px;
+  background-color: #222;
+  font-size: 0.8em;
+}
+
+footer p {
+  margin: 0 auto;
+  margin-bottom: 18px;
+  color: #f7f7f7;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: dotted 1px #f7f7f7;
+}
+
+footer a:hover {
+  border-bottom: solid 1px #f7f7f7;
+}
+/*# sourceMappingURL=main.css.map */

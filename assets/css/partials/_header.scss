@@ -1,0 +1,77 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+
+    background-color: $color-main;
+
+    font-size: 0.85em;
+    color: $color-fill;
+    font-family: "Lato", sans-serif;
+    
+    &.empty{
+        height: 49px;
+        border-bottom: 1px solid $color-quote;
+    }
+
+    hr{
+        border: none;
+        border-bottom: 1px solid $color-quote;
+    }
+
+    ul{
+        padding: 12px 0;
+        
+        li{
+            position: relative;
+            margin-left: 12px;
+            display: inline-block;
+            list-style: none;
+
+            &:before {
+                content: '\2022';
+                position: absolute;
+                left: -10px;
+            }
+
+            &:first-child{
+                margin-left: 0;
+
+                &:before {
+                    content: '';
+                }
+            }
+        }
+    }
+
+    .button{
+        border-color: $color-quote;
+    }
+
+    a{
+        color: $color-fill;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    nav{
+        width: fit-content;
+        margin: 0 auto;
+        padding: 24px 0;
+    }
+
+    .profil-pic{
+        float: left;
+        
+        img{
+            height: 75px;
+        }
+    }
+    .phone{
+        margin: 8px 12px;
+        float: right;
+    }
+}
