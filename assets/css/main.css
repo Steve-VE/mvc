@@ -9,7 +9,7 @@ input {
 }
 
 body {
-  background-image: url("/assets/img/NY_docks_o.jpg");
+  background-image: url("../img/NY_docks_o.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center bottom;
